@@ -1,6 +1,7 @@
+import scrollbar from 'tailwind-scrollbar';
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -13,6 +14,9 @@ export default {
         gold: "#DFAf37",
         purple4: "#261738",
         purple5: "#41264E",
+        purple6: "#B65FCF",
+        purple7: "#4a044e",
+        red: "#b45309",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -26,7 +30,7 @@ export default {
           "50%": { transform: "translateY(-20px)" },
         },
       },
-    },
+    }
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [scrollbar],
 };
