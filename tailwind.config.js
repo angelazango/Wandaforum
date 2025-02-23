@@ -32,9 +32,6 @@ export default {
       },
     }
   },
-  plugins: [scrollbar],
-<<<<<<< HEAD
+  plugins: [require("tailwind-scrollbar")],
 };
-=======
-};
->>>>>>> a1384c2 (push)
+

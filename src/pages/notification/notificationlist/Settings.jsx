@@ -6,10 +6,7 @@ import {
   faTiktok,
   faGoogle,
   faAmazon,
-  faStripe,
-  faApple,
 } from "@fortawesome/free-brands-svg-icons";
-// import DeleteAccountModal from "./deleteAccountModal";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import DeleteAccountModal from "./DeleteAccountModal";
 
@@ -21,7 +18,6 @@ const Settings = () => {
     SetisMOdalOpen(true);
   };
 
-  // Fixed the syntax error in the closeModal function
   const closeModal = () => {
     SetisMOdalOpen(false);
   };
@@ -37,9 +33,6 @@ const Settings = () => {
     TikTok: true,
     Google: true,
     Amazon: true,
-    Stripe: true,
-    DoorDash: true,
-    Apple: false,
   });
 
   const [recordingEnabled, setRecordingEnabled] = useState(true);
@@ -192,4 +185,3 @@ const Settings = () => {
 };
 
 export default Settings;
-tings;
