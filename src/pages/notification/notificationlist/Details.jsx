@@ -4,6 +4,50 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faClock, faBars } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+  {/*
+    
+    const NotificationDetails = [
+  { 
+    id: 1, 
+    type: "Message", 
+    title: "Ayamba sent you a new message", 
+    message: "Cloud computing has revolutionized the way businesses and individuals operate.", 
+    user: "Ayamba", 
+    date: "24 Nov 2018 at 9:30 AM", 
+    color: "blue" 
+  },
+  { 
+    id: 2, 
+    type: "Alert", 
+    title: "New job opportunity", 
+    message: "A new job that matches your profile has been posted.", 
+    user: "WandaPrep", 
+    date: "25 Nov 2018 at 10:00 AM", 
+    color: "red" 
+  },
+  { 
+    id: 3, 
+    type: "Reminder", 
+    title: "Interview Preparation", 
+    message: "Don't forget your interview tomorrow at 2 PM.", 
+    user: "WandaPrep", 
+    date: "26 Nov 2018 at 8:00 AM", 
+    color: "blue" 
+  },
+  { 
+    id: 4, 
+    type: "Feedback", 
+    title: "Your profile was viewed", 
+    message: "Your profile has been viewed by a recruiter.", 
+    user: "WandaPrep", 
+    date: "27 Nov 2018 at 1:00 PM", 
+    color: "blue" 
+  }
+];
+
+    *
+     */}
+
 const Details = () => {
   const [notifications, setNotifications] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
