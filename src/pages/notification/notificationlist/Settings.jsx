@@ -7,8 +7,8 @@ import {
   faGoogle,
   faAmazon,
 } from "@fortawesome/free-brands-svg-icons";
-import DeleteAccountModal from "./deleteAccountModal";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import DeleteAccountModal from "./DeleteAccountModal";
 
 const Settings = () => {
   const navigate = useNavigate(); // Initialize useNavigate
