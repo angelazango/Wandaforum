@@ -7,16 +7,30 @@ import { Link } from "react-router-dom";
 import { useState, useContext } from "react";
 import { UserContext } from "../../Context/UserContext";
 import { useNavigate } from "react-router-dom";
+import { login } from "../../api/Api";//=============mine
+import Notifications from "../../Components/Notifications";
 const Login = () => {
   const { setUser } = useContext(UserContext); // Access setUser from UserContext
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate(); // For redirection
+// ======================my modifications
+const [notifications, setNotifications] = useState([]);  // State to store notifications
+const [error, setError] = useState(null);  // State to store errors
+  const [user, ] = useState(null); 
 
-  const handleLogin = (e) => {
+
+  const handleLogin = async(e) => {
     e.preventDefault();
 
+
+    //=======mine
+    const data= await login(email,password)
+    setUser(data.user); //=====store user and notifications data
+    setNotifications(data.notifications); //=====fetch notifcations
+  
+    
     // Retrieve the single user from local storage
     const savedUser = JSON.parse(localStorage.getItem("user"));
 
